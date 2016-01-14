@@ -1,0 +1,21 @@
+{
+    "name": "apaoww/yii2-oracle-login",
+    "description": "Login using oracle database usename",
+    "type": "yii2-extension",
+    "keywords": ["yii2","extension"],
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "apaoww",
+            "email": "apa.oww@gmail.com"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "apaoww\\oraclelogin\\": ""
+        }
+    }
+}
