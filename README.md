@@ -28,4 +28,5 @@ Usage
 Once the extension is installed, simply use it in your code by  :
 
 ```php
-<?= \apaoww\oraclelogin\AutoloadExample::widget(); ?>```
+<?= \apaoww\OracleLogin::widget(["username" => 'oracle_id_username', "oracle_password" => $this->password,
+                "dsn" => '(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=127.0.0.1)(PORT=1521))(CONNECT_DATA=(SID=xe)))']); ?>```
