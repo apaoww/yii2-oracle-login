@@ -21,7 +21,6 @@ class OracleLogin extends \yii\base\Widget
         if (!@oci_connect($this->username, $this->password, $this->dsn ,"AL32UTF8")) {
             $e = oci_error();
             $session->set('oracle_error', $e['message']);
-            throw new \yii\web\HttpException(403, $e);
             return false;
         } else {
             return true;
